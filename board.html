@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Monopoly</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div id="board" v-bind:style="board">
+            <div id="boardCentre" v-bind:style="boardCentre">
+                <div id="chest" v-bind:style="centreChest">
+                    <p v-bind:style="chestWord">{{communityChest}}</p>
+                </div>
+                <img src="images/monopoly.png" alt="Monopoly logo" id="logo" v-bind:style="centreLogo">
+                <div id="chance" v-bind:style="centreChance">
+                    <p v-bind:style="chanceWord">{{chanceCards}}</p>
+                </div>
+            </div>
+            <div class="corner1" v-bind:style="corner1">
+                <div class="container">
+                    <p class="instructions" v-bind:style="instructions">Collect $200 when you pass</p>
+                    <p class="word-Go" v-bind:style="wordGo">Go</p>
+                    <img src="images/arrow.png" alt="GO arrow" id="arrow" v-bind:style="arrow">
+                </div>
+            </div>
+            <div class="flex-container1" v-bind:style="flex1">
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="lightBlue"></div>
+                        <p class="propertyName" v-bind:style="propertyName">
+                            {{propertyName1}}
+                        </p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice1}}</p>
+                    </div>  
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="lightBlue"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName2}}</p>
+                        <div class="square1"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice2}}</p>
+                    </div>  
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="chanceSpace">{{chanceCards}}</p>
+                        <img src="images/chance.png" alt="chance question mark" class="chanceCard">
+                    </div>    
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="lightBlue"></div>
+                        <p class="propertyName" v-bind:style="propertyName" v-bind:style="propertyPrice">{{propertyName3}}</p>
+                        <div class="square1"></div>
+                        <p class="price">${{propertyPrice2}}</p>
+                    </div>   
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="propertyName" v-bind:style="propertyName">{{railroad1}}</p>
+                        <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                        <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>    
+                    </div>    
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="taxSpace">Income Tax</p>
+                        <div class="square1">
+                            <div id="diamond"></div>
+                        </div>
+                        <p class="payment">Pay $200</p>
+                    </div>    
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="brown"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName4}}</p>
+                        <div class="square1"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice3}}</p>
+                    </div>  
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="chestSpace">{{communityChest}}</p>
+                        <img src="images/chest.gif" alt="Community Chest" class="chestCard">
+                    </div>    
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="brown"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName5}}</p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice3}}</p>
+                    </div> 
+            </div><!--flex1-->
+             <div class="corner2" v-bind:style="corner2">
+                <div class="container">
+                    <img src="images/injail.jpg" alt="face in jail cell" id="jail" v-bind:style="jail">
+                    <p id="just" v-bind:style="just">Just</p>
+                    <p id="visiting" v-bind:style="visiting">Visiting</p>
+                </div>
+            </div>
+            <div class="flex-container2" v-bind:style="flex2">
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="orange"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName6}}</p>
+                    <div class="square1"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice5}}</p>
+                </div>    
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="orange"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName7}}</p>
+                    <div class="square2"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice6}}</p>
+                </div>    
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <p class="chestSpace">{{communityChest}}</p>
+                    <img src="images/chest.gif" alt="chance question mark" class="chestCard">
+                </div>    
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="orange"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName8}}</p>
+                    <div class="square1"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice6}}</p>
+                </div>    
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <p class="propertyName" v-bind:style="propertyName">{{railroad2}}</p>
+                    <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                    <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>
+                </div>    
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="fuchsia"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName9}}</p>
+                    <div class="square1"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice7}}</p>
+                </div>    
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="fuchsia"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName10}}</p>
+                    <div class="square1"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice8}}</p>
+                </div>   
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <p class="propertyName" v-bind:style="propertyName">{{utilities1}}</p>
+                    <img src="images/lightbulb.png" alt="electric company lightbulb" class="utilities">
+                    <p class="price" v-bind:style="propertyPrice">${{utilitiesPrice}}</p>
+                </div>     
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="fuchsia"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName11}}</p>
+                    <div class="square2"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice8}}</p>
+                </div> 
+            </div><!--flex2-->
+            <div class="corner3">
+                <div class="container">
+                    <img src="images/freeparking.png" alt="free parking" id="freeParking">
+                </div>
+            </div>
+            <div class="flex-container3" v-bind:style="flex3">
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="yellow"></div>
+                        <p class="propertyName" v-bind:style="propertyName">
+                            {{propertyName17}}
+                        </p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice12}}</p>
+                    </div>  
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="propertyName" v-bind:style="propertyName">{{utilities2}}</p>
+                        <img src="images/faucet.gif" alt="water works faucet" class="utilities">
+                        <p class="price" v-bind:style="propertyPrice">${{utilitiesPrice}}</p>
+                    </div>
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="yellow"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName16}}</p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice11}}</p>
+                    </div>     
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="yellow"></div>
+                        <p class="propertyName" v-bind:style="propertyName" v-bind:style="propertyPrice">{{propertyName15}}</p>
+                        <div class="square2"></div>
+                        <p class="price">${{propertyPrice11}}</p>
+                    </div>   
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="propertyName" v-bind:style="propertyName">{{railroad3}}</p>
+                        <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                        <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>    
+                    </div>       
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="red"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName14}}</p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice10}}</p>
+                    </div>     
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="red"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName13}}</p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice9}}</p>
+                    </div> 
+                     <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="chanceSpace">{{chanceCards}}</p>
+                        <img src="images/chance.png" alt="chance question mark" class="chanceCard">
+                    </div>
+                    <div class="boardSpace" v-bind:style="boardSpace">
+                        <div v-bind:style="red"></div>
+                        <p class="propertyName" v-bind:style="propertyName">{{propertyName12}}</p>
+                        <div class="square2"></div>
+                        <p class="price" v-bind:style="propertyPrice">${{propertyPrice9}}</p>
+                    </div> 
+            </div><!--flex3-->
+             <div class="corner4">
+                <div class="container">
+                    <p id="goTo">Go to</p>
+                    <img src="images/police.png" alt="go to jail" id="police">
+                    <p id="toJail">Jail</p>
+                </div>
+            </div>
+            <div class="flex-container4" v-bind:style="flex4">
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="blue"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName22}}</p>
+                    <div class="square2"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice16}}</p>
+                </div>
+                <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="taxSpace">Luxury Tax</p>
+                        <img src="images/ring.png" alt="diamond ring" id="ring">
+                        <p class="payment">Pay $75</p>
+                </div>
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="blue"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName21}}</p>
+                    <div class="square1"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice15}}</p>
+                </div>     
+                <div class="boardSpace" v-bind:style="boardSpace">
+                        <p class="chanceSpace">{{chanceCards}}</p>
+                        <img src="images/chance.png" alt="chance question mark" class="chanceCard">
+                </div> 
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <p class="propertyName" v-bind:style="propertyName">{{railroad4}}</p>
+                    <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                    <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>
+                </div> 
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="green"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName20}}</p>
+                    <div class="square2"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice14}}</p>
+                </div> 
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <p class="chestSpace">{{communityChest}}</p>
+                    <img src="images/chest.gif" alt="monopoly chest" class="chestCard">
+                </div> 
+                <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="green"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName19}}</p>
+                    <div class="square2"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice13}}</p>
+                </div>   
+                 <div class="boardSpace" v-bind:style="boardSpace">
+                    <div v-bind:style="green"></div>
+                    <p class="propertyName" v-bind:style="propertyName">{{propertyName18}}</p>
+                    <div class="square1"></div>
+                    <p class="price" v-bind:style="propertyPrice">${{propertyPrice13}}</p>
+                </div>   
+            </div><!--flex4-->
+        </div><!--board-->
+        
+        <script>
+            var app = new Vue({
+                el: '#board',
+                
+                data:{
+                    //properties
+                    propertyName1:"Connecticut Avenue", propertyPrice1:120,
+                    propertyName2:"Vermont Avenue", propertyPrice2:100,
+                    propertyName3:"Oriental Avenue", 
+                    propertyName4:"Baltic Avenue", propertyPrice3:60,
+                    propertyName5:"Mediterranean Avenue",
+                    propertyName6:"New York Avenue", propertyPrice5: 200,
+                    propertyName7:"Tennessee Avenue", propertyPrice6:180,
+                    propertyName8:"St. James Avenue", 
+                    propertyName9:"Virginia Avenue", propertyPrice7:160,
+                    propertyName10:"States Avenue", propertyPrice8:140,
+                    propertyName11:"St. Charles Avenue", 
+                    propertyName12:"Kentucky Avenue", propertyPrice9:220,
+                    propertyName13:"Indiana Avenue", 
+                    propertyName14:"Illinois Avenue", propertyPrice10:240,
+                    propertyName15:"Atlantic Avenue", propertyPrice11:260, 
+                    propertyName16:"Ventnor Avenue", 
+                    propertyName17:"Marvin Gardens", propertyPrice12:280,
+                    propertyName18:"Pacific Avenue",
+                    propertyPrice13:300,
+                    propertyName19:"North Carolina Avenue",
+                    propertyName20:"Pennsylvania Avenue",
+                    propertyPrice14:320,
+                    propertyName21:"Park Place",
+                    propertyPrice15:350,
+                    propertyName22:"Boardwalk",
+                    propertyPrice16:400,
+                    
+                    
+                    //railroads
+                    railroad1:"Reading Railroad", railroadPrice:200,
+                    railroad2:"Pennsylvania Railroad",
+                    railroad3:"B & O Railroad",
+                    railroad4:"Short Line",
+                    
+                    //utilities
+                    utilities1:"Electric Company", utilitiesPrice:150,
+                    utilities2:"Water Works",
+                    
+                    //cards
+                    communityChest:"Community Chest",
+                    chanceCards:"Chance",
+                    
+                    //the board
+                    board: 'font-family:"Josefin Sans", sans-serif; text-transform:uppercase; text-align:center; hyphens:auto;width:2100px; height:2100px; border:2px solid #000; position:relative; background-color:#D5E8D4;',
+                    boardCentre: 'width:1468px; height:1468px; min-width:300px; min-height:300px; border:2px solid #000; position:absolute; top:14.9%;left:15%;',
+                    centreLogo: 'width:1000px; height:auto; position:absolute; top:42%; left:20%; transform:rotate(45deg);',
+                    centreChest: 'transform:rotate(45deg); border:1px dotted #000; width:450px; height:300px; position:absolute; top:12%; right:7%;',
+                    chestWord: 'position:absolute; top:28%; right:9%;font-size:2.3em;',
+                    centreChance: 'transform:rotate(45deg); border:1px dotted #000; width:450px; height:300px; position:absolute; top:66%; left:7%;',
+                    chanceWord: 'position:absolute; top:32%; left:30%; font-size:2.3em;',
+                    
+                    //corners
+                    corner1: 'width:315px; height:315px; border:2px solid #000; position:absolute; top:84.9%; left:84.9%;',
+                    instructions: 'position:absolute; width:200px; font-size:2em; top:4%; left:0%; transform:rotate(-45deg);',
+                    wordGo: 'position:absolute; width:250px; font-size:8em; top:-11%; left:21%; transform:rotate(-45deg); color:red; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;',
+                    arrow: ' width:260px; height:auto; position:absolute; top:80%;left:8%;',
+                    corner2: 'width:315px; height:315px; border:2px solid #000; position:absolute; top:84.9%; left:-0.1%;',
+                    jail: 'width:225px; height:225px; position:absolute; top:0%; left:29%;',
+                    just: 'font-size:2em; position:absolute; left:8%; top:20%; transform:rotate(90deg);',
+                    visiting: 'font-size:2em; position:absolute; left:40%; top:65%;',
+                    
+                    //property styles and positions
+                    flex1: 'display:flex; flex-direction:row; position:absolute; top:84.9%;left:15%;',
+                    flex2: 'display:flex; flex-direction:row; transform:rotate(90deg); position:absolute; top:42.4%; left:-27.5%;',
+                    flex3: 'display:flex; flex-direction:row; position:absolute; top:0%;left:15.1%; transform:rotate(180deg);',
+                    flex4: 'display:flex; flex-direction:row; transform:rotate(-90deg); position:absolute; top:42.5%; right:-27.5%;',
+                    boardSpace: 'width:161.2px; height:315px; border:0.5px solid #000;',  
+                    propertyName: 'font-size:1.7em;',
+                    propertyPrice: 'font-size:1em;',
+                    lightBlue: 'width:100%; height:62px; border:0.5px solid #000; background-color:#95D4F3;',
+                    brown: 'width:100%; height:62px; border:0.5px solid #000; background-color:#834C25;',
+                    orange: 'width:100%; height:62px; border:1px solid #000; background-color:#E69F3C;',
+                    fuchsia: 'width:100%; height:62px; border:1px solid #000; background-color:#CB4084;',
+                    red: 'width:100%; height:62px; border:1px solid #000; background-color:#DB332E;',
+                    yellow: 'width:100%; height:62px; border:1px solid #000; background-color:#EAE94B;',
+                    green: 'width:100%; height:62px; border:1px solid #000; background-color:#4FAD58;',
+                    blue: 'width:100%; height:62px; border:1px solid #000; background-color:#3F64A8;',
+                },  
+                
+                methods:{
+                   
+                }
+            });    
+        </script>
+    </body>
+</html>

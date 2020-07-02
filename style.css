@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/*
+html {
+    font-family:"Josefin Sans", sans-serif;
+    text-transform:uppercase;
+    text-align:center;
+    hyphens:auto;
+
+}
+*/
+
+/*
+#board {
+    width:2100px;
+    height:2100px;
+    min-width:600px;
+    min-height:600px;
+    border:2px solid #000;
+    position:relative;
+    background-color:#D5E8D4;
+}
+*/
+
+/*
+#boardCentre {
+    width:1468px;
+    height:1468px;
+    min-width:300px;
+    min-height:300px;
+    border:2px solid #000;
+    position:absolute;
+    top:14.9%;
+    left:15%;
+}
+*/
+
+/*
+#chest {
+    transform:rotate(45deg);
+    border:1px dotted #000;
+    width:450px;
+    height:300px;
+    position:absolute;
+    top:12%;
+    right:7%;
+}
+*/
+
+/*
+#chest p {
+    position:absolute;
+    top:28%;
+    right:9%;
+    font-size:2.3em;
+}
+*/
+
+/*
+#chance {
+    transform:rotate(45deg);
+    border:1px dotted #000;
+    width:450px;
+    height:300px;
+    position:absolute;
+    top:66%;
+    left:7%;
+}
+
+#chance p {
+    position:absolute;
+    top:32%;
+    left:30%;
+    font-size:2.3em;
+}
+*/
+
+/*
+#logo {
+    width:1000px;
+    height:auto;
+    position:absolute;
+    top:42%;
+    left:20%;
+    transform:rotate(45deg);
+}
+*/
+
+/*
+.corner1 {
+    width:315px;
+    height:315px;
+    border:2px solid #000;
+    position:absolute;
+    top:84.9%;
+    left:84.9%;
+}
+*/
+
+/*
+.instructions {
+    position:absolute;
+    width:200px;
+    font-size:2em;
+    top:3%;
+    left:-1%;
+    transform:rotate(-45deg);
+}
+*/
+
+/*
+.word-Go {
+    position:absolute;
+    width:250px;
+    font-size:8em;
+    top:-11%;
+    left:21%;
+    transform:rotate(-45deg);
+    color:red;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+*/
+
+/*
+#arrow {
+    width:260px;
+    height:auto;
+    position:absolute;
+    top:80%;
+    left:8%;
+}
+*/
+
+/*
+.corner2 {
+    width:315px;
+    height:315px;
+    border:2px solid #000;
+    position:absolute;
+    top:84.9%;
+    left:-0.1%;
+}
+*/
+
+/*
+#jail {
+    width:225px;
+    height:225px;
+    position:absolute;
+    top:0%;
+    left:29%;
+}
+*/
+
+/*
+#just {
+    font-size:2em;
+    position:absolute;
+    left:8%;
+    top:20%;
+    transform:rotate(90deg);
+}
+
+#visiting {
+    font-size:2em;
+    position:absolute;
+    left:40%;
+    top:65%;
+}
+*/
+
+/*
+.boardSpace {
+    width:161.2px;
+    height:315px;
+    border:0.5px solid #000;    
+}
+*/
+
+.square1 {
+    width:154px;
+    height:97px;
+    position:relative;
+}
+
+.square2 {
+    width:154px;
+    height:72px;
+    position:relative;
+}
+
+/*
+.propertyName {
+    font-size:1.7em;
+}
+*/
+
+/*
+.price {
+    font-size:1em;
+}
+*/
+
+/*
+.flex-container1 {
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    top:84.9%;
+    left:15%;
+}
+*/
+
+/*
+.colour-bar-light-blue {
+    width:100%;
+    height:62px;
+    border:0.5px solid #000;
+    background-color:#95D4F3;
+}
+
+.colour-bar-brown {
+    width:100%;
+    height:62px;
+    border:1px solid #000;
+    background-color:#834C25;
+}
+*/
+
+/*
+.colour-bar-orange {
+    width:100%;
+    height:62px;
+    border:1px solid #000;
+    background-color:#E69F3C;
+}
+
+.colour-bar-fuchsia {
+    width:100%;
+    height:62px;
+    border:1px solid #000;
+    background-color:#CB4084;
+}
+*/
+
+.taxSpace {
+    font-size:2em;
+    margin-top:1.5em;
+}
+
+#diamond {
+    height:20px;
+    width:20px;
+    transform:rotate(45deg);
+    background-color:#000;
+    position:absolute;
+    left:40%;
+    top:25%;
+}
+
+.payment {
+    font-size:1.5em;  
+}
+
+.railroad {
+    width:135px;
+    height:auto;
+}
+
+.chanceSpace {
+    font-size:2em;
+}
+
+.chanceCard {
+    width:154px;
+    height:auto;
+    margin-top:1em;
+}
+
+.chestSpace {
+    font-size:2em;;
+}
+
+.chestCard {
+    width:154px;
+    height:auto;
+}
+
+/*
+.flex-container2 {
+    display:flex;
+    flex-direction:row;
+    transform:rotate(90deg);
+    position:absolute;
+    top:42.4%;
+    left:-27.5%;
+}
+*/
+
+.utilities {
+    width:154px;
+    height:auto;
+}
+
+.corner3 {
+    width:315px;
+    height:315px;
+    border:2px solid #000;
+    position:absolute;
+    top:-0.1%;
+    left:-0.1%;
+}
+
+#freeParking {
+    width:315px;
+    height:315px;
+    transform:rotate(180deg);
+}
+
+.corner4 {
+    width:315px;
+    height:315px;
+    border:2px solid #000;
+    position:absolute;
+    top:-0.1%;
+    right:-0.1%;
+}
+
+#police {
+    width:225px;
+    height:225px;
+    transform:rotate(220deg);
+    position:absolute;
+    top:15%;
+    left:10%;
+}
+
+#goTo {
+    font-size:2em;
+    position:absolute;
+    left:2%;
+    top:68%;
+    transform:rotate(-135deg);
+}
+
+#toJail {
+    font-size:2em;
+    position:absolute;
+    left:72%;
+    top:3%;
+    transform:rotate(-135deg);
+}
+
+/*
+.flex-container4 {
+    display:flex;
+    flex-direction:row;
+    transform:rotate(-90deg);
+    position:absolute;
+    top:42.5%;
+    right:-27.5%;
+}
+*/
+
+#ring {
+    width:132px;
+    height:auto;
+}
