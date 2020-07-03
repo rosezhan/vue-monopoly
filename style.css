@@ -177,6 +177,7 @@ html {
 }
 */
 
+/*
 .square1 {
     width:154px;
     height:97px;
@@ -188,6 +189,7 @@ html {
     height:72px;
     position:relative;
 }
+*/
 
 /*
 .propertyName {
@@ -243,6 +245,7 @@ html {
 }
 */
 
+/*
 .taxSpace {
     font-size:2em;
     margin-top:1.5em;
@@ -285,6 +288,7 @@ html {
     width:154px;
     height:auto;
 }
+*/
 
 /*
 .flex-container2 {
@@ -297,6 +301,7 @@ html {
 }
 */
 
+/*
 .utilities {
     width:154px;
     height:auto;
@@ -350,6 +355,7 @@ html {
     top:3%;
     transform:rotate(-135deg);
 }
+*/
 
 /*
 .flex-container4 {
@@ -362,10 +368,12 @@ html {
 }
 */
 
+/*
 #ring {
     width:132px;
     height:auto;
 }
+*/
 
 .dice {
     display: inline-block;
@@ -375,6 +383,7 @@ html {
     height: 100px;
     margin: 0.5rem;
     margin-left:5em;
+    background-color:#fff;
 }
 
 .dice > div {

@@ -31,51 +31,51 @@
                         <p class="propertyName" v-bind:style="propertyName">
                             {{propertyName1}}
                         </p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice1}}</p>
                     </div>  
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="lightBlue"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName2}}</p>
-                        <div class="square1"></div>
+                        <div class="square1" v-bind:style="square1"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice2}}</p>
                     </div>  
                     <div class="boardSpace" v-bind:style="boardSpace">
-                        <p class="chanceSpace">{{chanceCards}}</p>
-                        <img src="images/chance.png" alt="chance question mark" class="chanceCard">
+                        <p class="chanceSpace" v-bind:style="chanceSpace">{{chanceCards}}</p>
+                        <img src="images/chance.png" alt="chance question mark" class="chanceCard" v-bind:style="chanceCard">
                     </div>    
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="lightBlue"></div>
                         <p class="propertyName" v-bind:style="propertyName" v-bind:style="propertyPrice">{{propertyName3}}</p>
-                        <div class="square1"></div>
+                        <div class="square1" v-bind:style="square1"></div>
                         <p class="price">${{propertyPrice2}}</p>
                     </div>   
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <p class="propertyName" v-bind:style="propertyName">{{railroad1}}</p>
-                        <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                        <img src="images/railroad.png" alt="Monopoly Train" class="railroad" v-bind:style="railroad">
                         <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>    
                     </div>    
                     <div class="boardSpace" v-bind:style="boardSpace">
-                        <p class="taxSpace">Income Tax</p>
-                        <div class="square1">
-                            <div id="diamond"></div>
+                        <p class="taxSpace" v-bind:style="taxSpace">Income Tax</p>
+                        <div class="square1" v-bind:style="square1">
+                            <div id="diamond" v-bind:style="diamond"></div>
                         </div>
-                        <p class="payment">Pay $200</p>
+                        <p class="payment" v-bind:style="payment">Pay $200</p>
                     </div>    
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="brown"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName4}}</p>
-                        <div class="square1"></div>
+                        <div class="square1" v-bind:style="square1"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice3}}</p>
                     </div>  
                     <div class="boardSpace" v-bind:style="boardSpace">
-                        <p class="chestSpace">{{communityChest}}</p>
-                        <img src="images/chest.gif" alt="Community Chest" class="chestCard">
+                        <p class="chestSpace" v-bind:style="chanceSpace">{{communityChest}}</p>
+                        <img src="images/chest.gif" alt="Community Chest" class="chestCard" v-bind:style="chestCard">
                     </div>    
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="brown"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName5}}</p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice3}}</p>
                     </div> 
             </div><!--flex1-->
@@ -90,57 +90,57 @@
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="orange"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName6}}</p>
-                    <div class="square1"></div>
+                    <div class="square1" v-bind:style="square1"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice5}}</p>
                 </div>    
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="orange"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName7}}</p>
-                    <div class="square2"></div>
+                    <div class="square2" v-bind:style="square2"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice6}}</p>
                 </div>    
                 <div class="boardSpace" v-bind:style="boardSpace">
-                    <p class="chestSpace">{{communityChest}}</p>
-                    <img src="images/chest.gif" alt="chance question mark" class="chestCard">
+                    <p class="chestSpace" v-bind:style="chestSpace">{{communityChest}}</p>
+                    <img src="images/chest.gif" alt="chance question mark" class="chestCard" v-bind:style="chestCard">
                 </div>    
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="orange"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName8}}</p>
-                    <div class="square1"></div>
+                    <div class="square1" v-bind:style="square1"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice6}}</p>
                 </div>    
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <p class="propertyName" v-bind:style="propertyName">{{railroad2}}</p>
-                    <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                    <img src="images/railroad.png" alt="Monopoly Train" class="railroad" v-bind:style="railroad">
                     <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>
                 </div>    
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="fuchsia"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName9}}</p>
-                    <div class="square1"></div>
+                    <div class="square1" v-bind:style="square1"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice7}}</p>
                 </div>    
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="fuchsia"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName10}}</p>
-                    <div class="square1"></div>
+                    <div class="square1" v-bind:style="square1"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice8}}</p>
                 </div>   
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <p class="propertyName" v-bind:style="propertyName">{{utilities1}}</p>
-                    <img src="images/lightbulb.png" alt="electric company lightbulb" class="utilities">
+                    <img src="images/lightbulb.png" alt="electric company lightbulb" class="utilities" v-bind:style="utilities">
                     <p class="price" v-bind:style="propertyPrice">${{utilitiesPrice}}</p>
                 </div>     
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="fuchsia"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName11}}</p>
-                    <div class="square2"></div>
+                    <div class="square2" v-bind:style="square2"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice8}}</p>
                 </div> 
             </div><!--flex2-->
-            <div class="corner3">
+            <div class="corner3" v-bind:style="corner3">
                 <div class="container">
-                    <img src="images/freeparking.png" alt="free parking" id="freeParking">
+                    <img src="images/freeparking.png" alt="free parking" id="freeParking" v-bind:style="freeParking">
                 </div>
             </div>
             <div class="flex-container3" v-bind:style="flex3">
@@ -149,108 +149,108 @@
                         <p class="propertyName" v-bind:style="propertyName">
                             {{propertyName17}}
                         </p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice12}}</p>
                     </div>  
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <p class="propertyName" v-bind:style="propertyName">{{utilities2}}</p>
-                        <img src="images/faucet.gif" alt="water works faucet" class="utilities">
+                        <img src="images/faucet.gif" alt="water works faucet" class="utilities" v-bind:style="utilities">
                         <p class="price" v-bind:style="propertyPrice">${{utilitiesPrice}}</p>
                     </div>
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="yellow"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName16}}</p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice11}}</p>
                     </div>     
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="yellow"></div>
                         <p class="propertyName" v-bind:style="propertyName" v-bind:style="propertyPrice">{{propertyName15}}</p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price">${{propertyPrice11}}</p>
                     </div>   
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <p class="propertyName" v-bind:style="propertyName">{{railroad3}}</p>
-                        <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                        <img src="images/railroad.png" alt="Monopoly Train" class="railroad" v-bind:style="railroad">
                         <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>    
                     </div>       
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="red"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName14}}</p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice10}}</p>
                     </div>     
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="red"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName13}}</p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice9}}</p>
                     </div> 
                      <div class="boardSpace" v-bind:style="boardSpace">
-                        <p class="chanceSpace">{{chanceCards}}</p>
-                        <img src="images/chance.png" alt="chance question mark" class="chanceCard">
+                        <p class="chanceSpace" v-bind:style="chanceSpace">{{chanceCards}}</p>
+                        <img src="images/chance.png" alt="chance question mark" class="chanceCard" v-bind:style="chanceCard">
                     </div>
                     <div class="boardSpace" v-bind:style="boardSpace">
                         <div v-bind:style="red"></div>
                         <p class="propertyName" v-bind:style="propertyName">{{propertyName12}}</p>
-                        <div class="square2"></div>
+                        <div class="square2" v-bind:style="square2"></div>
                         <p class="price" v-bind:style="propertyPrice">${{propertyPrice9}}</p>
                     </div> 
             </div><!--flex3-->
-             <div class="corner4">
+             <div class="corner4" v-bind:style="corner4">
                 <div class="container">
-                    <p id="goTo">Go to</p>
-                    <img src="images/police.png" alt="go to jail" id="police">
-                    <p id="toJail">Jail</p>
+                    <p id="goTo" v-bind:style="goTo">Go to</p>
+                    <img src="images/police.png" alt="go to jail" id="police" v-bind:style="police">
+                    <p id="toJail" v-bind:style="toJail">Jail</p>
                 </div>
             </div>
             <div class="flex-container4" v-bind:style="flex4">
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="blue"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName22}}</p>
-                    <div class="square2"></div>
+                    <div class="square2" v-bind:style="square2"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice16}}</p>
                 </div>
                 <div class="boardSpace" v-bind:style="boardSpace">
-                        <p class="taxSpace">Luxury Tax</p>
-                        <img src="images/ring.png" alt="diamond ring" id="ring">
-                        <p class="payment">Pay $75</p>
+                        <p class="taxSpace" v-bind:style="taxSpace">Luxury Tax</p>
+                        <img src="images/ring.png" alt="diamond ring" id="ring" v-bind:style="ring">
+                        <p class="payment" v-bind:class="payment">Pay $75</p>
                 </div>
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="blue"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName21}}</p>
-                    <div class="square1"></div>
+                    <div class="square1" v-bind:style="square1"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice15}}</p>
                 </div>     
                 <div class="boardSpace" v-bind:style="boardSpace">
-                        <p class="chanceSpace">{{chanceCards}}</p>
-                        <img src="images/chance.png" alt="chance question mark" class="chanceCard">
+                        <p class="chanceSpace" v-bind:style="chanceSpace">{{chanceCards}}</p>
+                        <img src="images/chance.png" alt="chance question mark" class="chanceCard" v-bind:style="chanceCard">
                 </div> 
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <p class="propertyName" v-bind:style="propertyName">{{railroad4}}</p>
-                    <img src="images/railroad.png" alt="Monopoly Train" class="railroad">
+                    <img src="images/railroad.png" alt="Monopoly Train" class="railroad" v-bind:style="railroad">
                     <p class="price" v-bind:style="propertyPrice">${{railroadPrice}}</p>
                 </div> 
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="green"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName20}}</p>
-                    <div class="square2"></div>
+                    <div class="square2" v-bind:style="square2"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice14}}</p>
                 </div> 
                 <div class="boardSpace" v-bind:style="boardSpace">
-                    <p class="chestSpace">{{communityChest}}</p>
-                    <img src="images/chest.gif" alt="monopoly chest" class="chestCard">
+                    <p class="chestSpace" v-bind:style="chestSpace">{{communityChest}}</p>
+                    <img src="images/chest.gif" alt="monopoly chest" class="chestCard" v-bind:style="chestCard">
                 </div> 
                 <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="green"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName19}}</p>
-                    <div class="square2"></div>
+                    <div class="square2" v-bind:style="square2"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice13}}</p>
                 </div>   
                  <div class="boardSpace" v-bind:style="boardSpace">
                     <div v-bind:style="green"></div>
                     <p class="propertyName" v-bind:style="propertyName">{{propertyName18}}</p>
-                    <div class="square1"></div>
+                    <div class="square1" v-bind:style="square1"></div>
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice13}}</p>
                 </div>   
             </div><!--flex4-->
@@ -361,6 +361,12 @@
                     jail: 'width:225px; height:225px; position:absolute; top:0%; left:29%;',
                     just: 'font-size:2em; position:absolute; left:8%; top:20%; transform:rotate(90deg);',
                     visiting: 'font-size:2em; position:absolute; left:40%; top:65%;',
+                    corner3: 'width:315px; height:315px; border:2px solid #000; position:absolute; top:-0.1%; left:-0.1%;',
+                    freeParking: 'width:315px; height:315px; transform:rotate(180deg);',
+                    corner4: 'width:315px; height:315px; border:2px solid #000; position:absolute; top:-0.1%; right:-0.1%;',
+                    police: 'width:225px; height:225px; transform:rotate(220deg); position:absolute; top:15%; left:10%;',
+                    goTo: 'font-size:2em; position:absolute; left:2%; top:68%; transform:rotate(-135deg);',
+                    toJail: 'font-size:2em; position:absolute; left:72%; top:3%; transform:rotate(-135deg);',
                     
                     //property styles and positions
                     flex1: 'display:flex; flex-direction:row; position:absolute; top:84.9%;left:15%;',
@@ -378,6 +384,20 @@
                     yellow: 'width:100%; height:62px; border:1px solid #000; background-color:#EAE94B;',
                     green: 'width:100%; height:62px; border:1px solid #000; background-color:#4FAD58;',
                     blue: 'width:100%; height:62px; border:1px solid #000; background-color:#3F64A8;',
+                    square1: 'width:154px; height:97px; position:relative;',
+                    square2: 'width:154px; height:72px; position:relative;',
+                    taxSpace: 'font-size:2em; margin-top:1.5em;',
+                    diamond: 'height:20px; width:20px; transform:rotate(45deg); background-color:#000; position:absolute; left:40%; top:25%;',
+                    payment: 'font-size:1.5em',
+                    railroad: 'width:135px; height:auto;',
+                    chanceSpace: 'font-size:2em;',
+                    chanceCard: 'width:154px; height:auto; margin-top:1em;',
+                    chestSpace: 'font-size:2em;',
+                    chestCard: 'width:154px; height:auto;',
+                    utilities: 'width:154px; height:auto;',
+                    ring: 'width:132px; height:auto;',
+                    
+                    
                     
                 },//data
                 //put the numbers on the dice
