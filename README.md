@@ -13,7 +13,7 @@
        * Author: w3schools
        * URL: https://www.w3schools.com/howto/howto_js_draggable.asp
        * Date: July 2, 2020
- 4. code for draggable elements using class referenced from:
+ 4. Draggable elements using class referenced from:
        * Author: Oleg
        * URL: https://stackoverflow.com/questions/14695933/draggable-div-with-classname
        * Date: July 2, 2020
