@@ -366,3 +366,152 @@ html {
     width:132px;
     height:auto;
 }
+
+.dice {
+    display: inline-block;
+    position: relative;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    margin-left:5em;
+}
+
+.dice > div {
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.dice[data-dots="1"] > :nth-child(1) {
+    top: 40px;
+    left: 40px;
+    background-color: black;
+}
+
+.dice[data-dots="2"] > :nth-child(1) {
+    top: 20px;
+    left: 40px;
+    background-color: black;
+
+}
+
+.dice[data-dots="2"] > :nth-child(2) {
+    top: 50px;
+    left: 40px;
+    background-color: black;
+}
+
+.dice[data-dots="3"] > :nth-child(1) {
+    top: 20px;
+    left: 40px;
+    background-color: black;
+}
+
+.dice[data-dots="3"] > :nth-child(2) {
+    top: 50px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="3"] > :nth-child(3) {
+    top: 50px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="4"] > :nth-child(1) {
+    top: 20px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="4"] > :nth-child(2) {
+    top: 50px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="4"] > :nth-child(3) {
+    top: 50px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="4"] > :nth-child(4) {
+    top: 20px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="5"] > :nth-child(1) {
+    top: 10px;
+    left: 40px;
+    background-color: black;
+}
+
+.dice[data-dots="5"] > :nth-child(2) {
+    top: 40px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="5"] > :nth-child(3) {
+    top: 40px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="5"] > :nth-child(4) {
+    top: 70px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="5"] > :nth-child(5) {
+    top: 70px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="6"] > :nth-child(1) {
+    top: 10px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="6"] > :nth-child(2) {
+    top: 40px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="6"] > :nth-child(3) {
+    top: 40px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="6"] > :nth-child(4) {
+    top: 70px;
+    left: 20px;
+    background-color: black;
+}
+
+.dice[data-dots="6"] > :nth-child(5) {
+    top: 70px;
+    left: 60px;
+    background-color: black;
+}
+
+.dice[data-dots="6"] > :nth-child(6) {
+    top: 10px;
+    left: 60px;
+    background-color: black;
+}
+
+#movePiece {
+    position:absolute;
+}

@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
+    <div id="monopoly">    
         <div id="board" v-bind:style="board">
             <div id="boardCentre" v-bind:style="boardCentre">
                 <div id="chest" v-bind:style="centreChest">
@@ -253,13 +254,52 @@
                     <p class="price" v-bind:style="propertyPrice">${{propertyPrice13}}</p>
                 </div>   
             </div><!--flex4-->
-        </div><!--board-->
-        
+        </div><!--board-->  
+            <!-- <div v-for="(piece, index) in pieces" v-bind:style="pieceFlex">
+                <div>
+                    <img id="movePiece" v-bind:src="piece.pieceImage" alt="Monopoly pieces" v-bind:style="pieceSize" v-bind:style="piece.piecePosition">
+                    <p>{{piece.pieceName}}</p>
+                </div>
+            </div>     -->
+            <div id="movePiece">
+                <img id="movePieceHeader" src="images/pieces/car.png">
+            </div>
+            <div v-on:click="roll">
+                <div class="dice" v-for="dice in dices"
+                    v-bind:data-dots="dice.dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>    
+            </div>
+        </div><!--monopoly-->
         <script>
             var app = new Vue({
-                el: '#board',
-                
+                el: '#monopoly',
+            
                 data:{
+                    //dice
+                     dices: [
+                        { dots: 1 },
+                        { dots: 1 },
+                    ],
+                    //pieces
+                    pieces:[
+                        {pieceImage:"images/pieces/car.png", pieceName:"Car", piecePosition:'position:absolute'}, 
+                        {pieceImage:"images/pieces/dog.png", pieceName:"Dog", piecePosition:'position:absolute'},
+                        {pieceImage:"images/pieces/hat.png", pieceName:"Hat", piecePosition:'position:absolute'}, 
+                        {pieceImage:"images/pieces/iron.png", pieceName:"Iron", piecePosition:'position:absolute'}, 
+                        {pieceImage:"images/pieces/ship.png", pieceName:"Ship", piecePosition:'position:absolute'},
+                        {pieceImage:"images/pieces/shoe.png", pieceName:"Shoe", piecePosition:'position:absolute'},
+                        {pieceImage:"images/pieces/thimble.png", pieceName:"Thimble", piecePosition:'position:absolute'},
+                        {pieceImage:"images/pieces/wheelbarrow.png", pieceName:"Wheel Barrow", piecePosition:'position:absolute'},
+                    ],
+                    pieceFlex:'display:flex; flex-direction:row; flex-wrap:wrap; display:inline-block; font-family:"Josefin Sans", sans-serif;',
+                    pieceSize:'width:150px; height:auto;',
+                    
                     //properties
                     propertyName1:"Connecticut Avenue", propertyPrice1:120,
                     propertyName2:"Vermont Avenue", propertyPrice2:100,
@@ -338,12 +378,31 @@
                     yellow: 'width:100%; height:62px; border:1px solid #000; background-color:#EAE94B;',
                     green: 'width:100%; height:62px; border:1px solid #000; background-color:#4FAD58;',
                     blue: 'width:100%; height:62px; border:1px solid #000; background-color:#3F64A8;',
-                },  
+                    
+                },//data
+                //put the numbers on the dice
+                mounted() {
+                    this.roll();
                 
-                methods:{
-                   
-                }
-            });    
+                },//mounted
+                
+                methods:{    
+                    //function for changing the number
+                    roll() {
+                        this.dices.forEach(dice => {
+                        dice.dots = Math.floor(Math.random() * 6) + 1;
+                    });
+                }//roll 
+            },//methods
+            }); //vue
+            //dice code referenced from: 
+            //Author: Ilona Codes
+            //URL:https://dev.to/ilonacodes/frontend-shorts-vue-js-vanilla-js-digital-dices-og
+            //date: June 30, 2020 
+
+            
         </script>
+        <script src="dice.js"></script>
+        <script src="drag.js"></script>
     </body>
 </html>
